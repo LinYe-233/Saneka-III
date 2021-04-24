@@ -14,7 +14,7 @@ import es.uma.informatica.ejb.saneka.GestionEncuesta;
 import es.uma.informatica.ejb.saneka.GestionExpediente;
 import es.uma.informatica.jpa.saneka.Encuesta;
 import es.uma.informatica.jpa.saneka.Expediente;
-
+/*
 public class EncuestaT {
 	
 private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonicalName());
@@ -38,7 +38,7 @@ private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonica
 	}
 	
 	@Test
-	public void testInsertarEncuesta() {
+	public void testInsertarEncuesta() throws SanekaException {
 		Expediente expEntity = gestionExpediente.devolverExpediente(12345);	
 		Encuesta enc = new Encuesta("12/12/2020", expEntity);
 		try {
@@ -137,3 +137,4 @@ private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonica
 	}
 
 }
+*/

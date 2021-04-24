@@ -24,7 +24,6 @@ import es.uma.informatica.ejb.exceptions.ClaseExistenteException;
 import es.uma.informatica.ejb.exceptions.ClaseNoEncontradoException;
 import es.uma.informatica.ejb.exceptions.GrupoNoEncontradoException;
 import es.uma.informatica.ejb.exceptions.SanekaException;
-import es.uma.informatica.ejb.exceptions.TitulacionNoExistenteException;
 import es.uma.informatica.ejb.saneka.GestionAsignatura;
 import es.uma.informatica.ejb.saneka.GestionCentro;
 import es.uma.informatica.ejb.saneka.GestionClase;
@@ -97,16 +96,16 @@ public class ClaseT {
 		
 	}*/
 	@Test
-	public void testModificarClase() {
+	public void testModificarClase() throws SanekaException {
 		try {
-			Titulacion titu = gestionTitulacion.obtenerTitulacion(1234);
+			Titulacion titu = gestionTitulacion.devolverTitulacion(1234);
 			System.out.println("hola");
 			Grupo grupo = gestionGrupo.obtenerGrupo(123);
 			Asignatura asig = new Asignatura(226,true,112,6,titu);
 			Clase clase = new Clase(2,"2021-04-11",asig,grupo);
 			gestionClase.actualizarClase(grupo.getID(), clase);
 			
-		} catch (GrupoNoEncontradoException | TitulacionNoExistenteException | ClaseNoEncontradoException e) {
+		} catch (GrupoNoEncontradoException| ClaseNoEncontradoException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

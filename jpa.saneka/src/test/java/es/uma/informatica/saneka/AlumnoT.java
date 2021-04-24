@@ -19,7 +19,7 @@ import es.uma.informatica.ejb.exceptions.SanekaException;
 import es.uma.informatica.ejb.saneka.GestionAlumno;
 import es.uma.informatica.jpa.saneka.Alumno;
 	
-public class AlumnoTest {
+public class AlumnoT {
 	
 	private static final String ALUMNOS_EJB = "java:global/classes/AlumnoEJB";
 	private static final String GLASSFISH_CONFIGI_FILE_PROPERTY = "org.glassfish.ejb.embedded.glassfish.configuration.file";

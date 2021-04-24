@@ -13,8 +13,7 @@ public class Grupo implements Serializable{
 	private Integer ID;
 	@Column(unique=true,nullable=false)
 	private Integer Curso;
-	//@Column(unique=true,nullable=false)
-	@Column(nullable=false)
+	@Column(unique=true,nullable=false)
 	private String Letra;
 	@Column(nullable=false)
 	private String Turno;

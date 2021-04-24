@@ -2,10 +2,9 @@ package es.uma.informatica.ejb.saneka;
 
 import javax.ejb.Stateless;
 
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-
-import es.uma.informatica.ejb.exceptions.ExpedienteNoEncontrado;
 import es.uma.informatica.ejb.exceptions.ExpedienteNoEncontradoException;
 import es.uma.informatica.ejb.exceptions.MatriculaExistente;
 import es.uma.informatica.ejb.exceptions.MatriculaNoExistente;

@@ -5,7 +5,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import es.uma.informatica.ejb.exceptions.TitulacionExistenteException;
-import es.uma.informatica.ejb.exceptions.TitulacionNoExistenteException;
+import es.uma.informatica.ejb.exceptions.TitulacionNoEncontradoException;
+import es.uma.informatica.ejb.exceptions.TitulacionNoEncontradoException;
 import es.uma.informatica.jpa.saneka.Titulacion;
 
 @Stateless
@@ -15,10 +16,10 @@ public class TitulacionEJB implements GestionTitulacion{
 	private EntityManager em;
 	
 	@Override
-	public String mostrarTitulacion(Titulacion titulacion) throws TitulacionNoExistenteException {
+	public String mostrarTitulacion(Titulacion titulacion) throws TitulacionNoEncontradoException {
 		Titulacion existente = em.find(Titulacion.class, titulacion.getCodigo());
 		if (existente==null) {
-			throw new TitulacionNoExistenteException();
+			throw new TitulacionNoEncontradoException();
 		}
 		
 		String res = existente.toString();
@@ -27,10 +28,10 @@ public class TitulacionEJB implements GestionTitulacion{
 	}
 
 	@Override
-	public void eliminarTitulacion(Titulacion titulacion) throws TitulacionNoExistenteException {
+	public void eliminarTitulacion(Titulacion titulacion) throws TitulacionNoEncontradoException {
 		Titulacion existente = em.find(Titulacion.class, titulacion.getCodigo());
 		if(existente==null) {
-			throw new TitulacionNoExistenteException();
+			throw new TitulacionNoEncontradoException();
 		}
 		em.remove(existente);
 		
@@ -48,10 +49,10 @@ public class TitulacionEJB implements GestionTitulacion{
 	}
 
 	@Override
-	public void modificarTitulacion(Titulacion titulacion) throws TitulacionNoExistenteException {
+	public void modificarTitulacion(Titulacion titulacion) throws TitulacionNoEncontradoException {
 		Titulacion existente = em.find(Titulacion.class, titulacion.getCodigo());
 		if (existente==null) {
-			throw new TitulacionNoExistenteException();
+			throw new TitulacionNoEncontradoException();
 		}
 		
 		existente.setCreditos(titulacion.getCreditos());
@@ -59,10 +60,10 @@ public class TitulacionEJB implements GestionTitulacion{
 		
 	}
 	
-	public Titulacion devolverTitulacion(Integer code) throws TitulacionNoExistenteException{
+	public Titulacion devolverTitulacion(Integer code) throws TitulacionNoEncontradoException{
 		Titulacion existente = em.find(Titulacion.class, code);
 		if (existente==null) {
-			throw new TitulacionNoExistenteException();
+			throw new TitulacionNoEncontradoException();
 		}
 		
 		return existente;

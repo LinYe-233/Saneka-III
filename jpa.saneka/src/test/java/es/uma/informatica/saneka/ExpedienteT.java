@@ -23,7 +23,7 @@ import es.uma.informatica.ejb.saneka.GestionExpediente;
 import es.uma.informatica.jpa.saneka.Alumno;
 import es.uma.informatica.jpa.saneka.Expediente;
 import es.uma.informatica.jpa.saneka.Titulacion;
-
+/*
 public class ExpedienteT {
 
 	private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonicalName());
@@ -187,3 +187,4 @@ public class ExpedienteT {
 		}
 	}
 }
+*/

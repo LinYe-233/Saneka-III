@@ -26,7 +26,7 @@ import es.uma.informatica.jpa.saneka.Centro;
 import es.uma.informatica.jpa.saneka.Expediente;
 import es.uma.informatica.jpa.saneka.Matricula;
 import es.uma.informatica.jpa.saneka.Titulacion;
-
+/*
 public class MatriculaTest {
 
 	private static final String MATRICULA_EJB = "java:global/classes/MatriculaEJB";
@@ -259,3 +259,4 @@ public class MatriculaTest {
 	}
 
 }
+*/

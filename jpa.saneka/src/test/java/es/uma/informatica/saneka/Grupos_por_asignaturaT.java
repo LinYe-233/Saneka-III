@@ -10,8 +10,10 @@ import org.junit.Test;
 import es.uma.informatica.ejb.exceptions.ExpedienteExistenteException;
 import es.uma.informatica.ejb.exceptions.GpAExistenteException;
 import es.uma.informatica.ejb.exceptions.SanekaException;
+import es.uma.informatica.ejb.saneka.GestionAsignatura;
 import es.uma.informatica.ejb.saneka.GestionEncuesta;
 import es.uma.informatica.ejb.saneka.GestionExpediente;
+import es.uma.informatica.ejb.saneka.GestionGrupo;
 import es.uma.informatica.ejb.saneka.GestionGrupos_por_asignatura;
 import es.uma.informatica.jpa.saneka.Alumno;
 import es.uma.informatica.jpa.saneka.Asignatura;
@@ -20,7 +22,7 @@ import es.uma.informatica.jpa.saneka.Grupo;
 import es.uma.informatica.jpa.saneka.Grupos_por_asignatura;
 import es.uma.informatica.jpa.saneka.Grupos_por_asignatura.Grupos_por_asignaturaId;
 import es.uma.informatica.jpa.saneka.Titulacion;
-
+/*
 public class Grupos_por_asignaturaT {
 private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonicalName());
 	
@@ -96,3 +98,4 @@ private static final Logger LOG = Logger.getLogger(ExpedienteT.class.getCanonica
 	}
 	
 }
+*/

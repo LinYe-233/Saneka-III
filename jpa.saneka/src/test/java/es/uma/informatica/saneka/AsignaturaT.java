@@ -2,6 +2,7 @@ package es.uma.informatica.saneka;
 
 import static org.junit.Assert.*;
 
+
 import java.util.Properties;
 import java.util.logging.Logger;
 
@@ -17,7 +18,6 @@ import org.junit.Test;
 
 import es.uma.informatica.ejb.exceptions.AsignaturaExistenteException;
 import es.uma.informatica.ejb.exceptions.SanekaException;
-import es.uma.informatica.ejb.exceptions.TitulacionNoExistenteException;
 import es.uma.informatica.ejb.saneka.GestionAsignatura;
 import es.uma.informatica.ejb.saneka.GestionExpediente;
 import es.uma.informatica.ejb.saneka.GestionTitulacion;
